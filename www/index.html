@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="components/script.js" defer></script>
+    <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>    
+    <script src="components/loader.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container h-100" id="start">
+    <div class="row">
+	<div class="col-md-12" id="modify">
+    <h1 class="text-center">Aplicativo Multiuso</h1>
+    <button class="btn btn-block btn-outline-success" id="btnStart">Começar</button>
+  </div>
+</div>
+  </div>
+
+  <!-- INICIO -->
+  <div class="container" id="app">
+    <p></p>
+    <h3 class="text-center">Aplicativo Multiuso</h3>
+    <hr>
+    <button class="btn btn-block btn-outline-dark" id="vibra">Vibrar</button>
+    <button class="btn btn-block btn-outline-dark" id="camera">Camêra</button>
+    <p></p>    
+    <div class="row">
+    <div class="col-md-12">
+      <div class="card" style="width: 100%;">
+      <img class="card-img-top" src="..." alt="Card image cap" id="img" onerror="this.src='unnamed.jpg'">
+      <div class="card-body">
+        <p class="card-text">Foto tirada.</p>
+      </div>
+    </div>
+    </div>
+  </div>
+  <p></p>
+    <button class="btn btn-block btn-outline-dark" id="btnMapa">Mapa com a localização atual</button>   
+    <button class="btn btn-block btn-outline-dark" id="barcode">Código de barras</button>   
+    <button class="btn btn-block btn-outline-danger" id="back">Voltar</button>   
+    <div class="row">
+	    <div class="col-md-12">
+        <p></p>
+        <div id="map" class="map"></div>
+      </div>
+    </div> 
+  </div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+/**/
+img {
+  width: 40%;
+  height: 60%;
+}
+
+#map{
+  margin-top: 5%;
+  margin: 0 auto;
+  width: 350px;
+  height: 400px;
+}
+
+#modify{
+  margin-top: 70%;
+}
